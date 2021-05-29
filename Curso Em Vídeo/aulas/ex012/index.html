@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Vídeos com HTML5</title>
 </head>
 <body>
+    <h1>Inserindo vídeos hospedados internamente!</h1>
+    <p>Este vídeo esta inserindo no meu próprio servidor.</p>
+    <video controls poster="imagens/thumbnail.jpg" width="560">
+        <source src="midia/maisleve.webm" type="video/webm">
+        <source src="midia/medio.m4v" type="video/mp4">
+        <source src="midia/video.mp4" type="video/mp4">
+        <p>Seu navegador não está detectando o vídeo, tente exibir em outro dispositivo.</p>
+    </video>
 
+    <h1>Inserindo videos do youtube</h1>
+    <p>Aqui um vídeo do melhor curso gratuito do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/140518581?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
