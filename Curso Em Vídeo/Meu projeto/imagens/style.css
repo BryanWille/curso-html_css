@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    background-color: #131212;
+}
+p, h1, h2, li, ol{
+    color: white;
+}
+ li, ol{
+    text-align: center;
+}
+ a{
+     color: #38ffac;
+ }
