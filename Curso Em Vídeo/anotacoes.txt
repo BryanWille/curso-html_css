@@ -1,0 +1,367 @@
+<html>
+<head>  cabeça onde ta a estrtutura
+<body>  onde está o conteudo
+
+<p>     cria paragráfo!
+<h1>    cria título nível 1
+<br>    quebra linha
+<hr>    deixa a linha horizontal em baixo de algo
+
+<a> cria uma âncora ao link, onde você coloca a msg entre a tag, e dentro do href="" o url, target"" geralmente _blank para abrir o link em nova aba, e rel="" external para indicar que é um link externo.
+<b>     Em negrito (não semantico)
+<i>     Em itálico (não semantico)
+<u>     Marcação em baixo (não semantico)
+
+<sup>   Deixa em cima (como o quadro x², semantico)
+<sub>   Deixa a tag em baixo (como a formula de h2o, e semantico)
+<del>   Texto Rasurado (semantico)
+<ins>   texto com marcação em baixo (semantico)
+<strong> Deixa em negrito (Semantico)
+<EM>    Deixa em itálico (Semantico)
+<code>  Deixa as letras em mono espaço
+<pre>   mantem os espaços!
+<q>     Faz uma citação
+<blockquote> faz a citação tabulada
+<abbr>  indica que é uma abreviação (paramentro title indica o significado da abrviação)
+<bdo>   escreve de frente pra tras um texto ou de tras pra frente (usar parametro)
+<ul>    unordered list (tem que usar <li>)
+<ol>    ordened list (tem que usar <li>)
+<dl>    cria lista de difinição
+<dt>    cria o temro que vai definir (dentro de dl)
+<dd>    define o termo selecionado (dentro de dl, abaixo de dt)
+
+<mark>  Cria uma espécie de marcador de textos!
+
+<small> deixa os textos pequenos (Semantico)
+
+<img src = "diga o local da imagem, ou ctrl + espaço" alt = "o que foi aqui colocado aparece quando o site buga e não mostra a imagem"> Tag de imagens
+
+para colocar um favicon (o icone que aparece na aba) basta colocar link e selecionar favicon: assim:
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> onde você seleciona o arquivo em href.
+
+Títulos tem hierarquia. a hierarquia vem de baixo pra cima, ou seja quando mais próximo de 0 maior o titulo. não se deve usar um h2 depois de um h3, ou um h4 depois de h2, tem-se que seguir a hierarquia. que alias só vai até 6
+<h1> </h1> até <h6> </h6> h vem de heading (titulo em ingles)
+
+html5 foca em Semantica ou seja, importa pra que ta ali, e não como tá ali, mesmo estando não estão bonitos.
+
+Para deixarmos em negrito há duas maneiras, usando a tag b ou usando a tag strong (a tag b não é semantica, prefira usar a tag strong)
+
+A mesma coisa para itálico, usando a tag i não é semantica, já a tag EM é semantica ou seja, a estrutura usada é validada no EM, diferente do i, que é so a forma não a semanticicidade!
+
+Para marcar igual um marcador de texto usa-se a tag <mark> (que não é semantica, só forma!)
+
+
+style é um parametro e pode ser usado dentro de uma tag para invocar as css ex <mark style="background-color: rgb(x,y,z)" é so vai funcionar na tag que for usada
+
+ou podemos criar a tag style dentro de head, que vamos marcar a tag como
+<style>
+	mark(ou sua tag){
+		background-color: limegreen;
+	}
+</style>
+
+Então todo mark vai ter fundo em cor lima!
+
+Para pequeno e grande temos as tags <big> e <small>para deixar grande e pequeno, na ordem que esta escrito mesmo a tag big é obsoleta e não é semantica e sim de forma então tem outros jeitos de fazer. já a tag small é semantica, pois pode tirar informações de texto pequeno como por exemplo contratos etc...
+
+Já para escrever um texto rasurado ou seja com uma linha no meio a gente pode usar a tag <del> que é semântica!
+
+Já para marcar a linha em baixo para dar enfase também como ficam os links marcados em baixo, podemosar usar a tag <ins> que é semantica ou a tag <u> que não é semântica!
+
+Para marcação com x² onde ao quadrado temos que usar a tag <sup> que é a tag que eleva as palavras, tendeu? (é semantica)
+
+Ja para ao contario com h20 (onde 2 fica em baixo como a formula da agua) usar a tag <sub>
+
+Colocar emote: &#x + código do emote do emojipedia.org
+
+<code> coloca um código que não vai funcionar mas colocar a sematnicaou seja o setndio, o computador vai ler que é um codigo, entendeu isso é semantico, esse código vai ficar mono espaçado, ou seja não adianta dar mt espaço, pra fncionar o espaçamento temos que usar a tag <pre> que vai manter os espaços
+
+Tag <q> serve para citação, da a semantica de uma citação ou seja da significado, mehorque apenas com o ", embora o <q> coloque
+
+<blockquote> vai fazer uma citação mais específica ou seja vai dar tipo um tab e uma citação se usarmos o paramtro cite="" dentro dessa tag podemos colocar o site dentro para otimizar o SEO.
+
+<abbr> marca as abreviações e se usarmos o parametro title quando passarmos o mouse em cima da abreviação vamos ter o que escrevermos no texto (que pode ser no caso o significado da abreviação)
+
+<bdo> tem que usar o parametro dir="rtl" ou "ltr", rtl vai de tras pra frente ou seja missa iav, já o ltr vai assim (normal)
+
+s
+			Criar listas
+
+
+<ol> ordened lists ou seja vai criar listas ordenadas
+<li> vai fazer as listas, ou seja precisa estar dentro da tag <ol> e você coloca uma por item: ex <ol> <il>Item 1</il> <i>Item 2</i> </ol> vai numerar indpendente do numeros de itens!
+
+Podemos usar numrações nas listas ou usando o parametro type="" dentro de ol, que vai dar a opção 1 2 3... A B C... a b c... I II III... e i ii iii...
+
+E se quisermos começar a lista de um número específico temos que usar o parametro start dentro de ol, ex <ol type="I" start="5"> vai gerar a lista V VI VII IX X...
+
+<ul> Unorderned list ou seja lista não ordenadas, também funciona como a <ol>, porém não tem listamento!
+Parametros para ela são: disc (bola preta) circle (circunferencia) e square (quadrado preto)
+
+Podemos criar listas de definições usando a tag <dl> para começar a lista, na tag <dt> dentro da dd vamos colocar o termo que vamos defidnir, e na tag <dd> podemos definir a definição, tanto <dt> quando <dd> estão dentro de dl.
+
+
+			Links 
+  
+<a> para links externos, isso vai criar um hyperlink ou seja um texto que quando clicado leva a um site externo, então vamos usar <a href="link_aqui" target" geralmente é _blank" e rel="external" para indicar um site externo. tbm tem a tag hreflang="" que vai indicar qual lingua esta o hyperlink.
+
+no target="" podemos usar os seguintes textos.
+
+_blank vai abrir o link em uma nova aba.
+_self vai abrir o link na janela atual (é o padrão).
+_top vai desfazer todos os frames e abrir o destino no navegador completo.
+_parent similar ao uso do _top em uma refêrencia à janela mãe.
+nome-do-frame caso esteja usando frames, indicar o nome da janela ao abrir.
+
+no rel="" podemos usar as seguintes referências.
+
+next indica que o link é a próxima parte do do documento atual.
+prev indica que o link é para parte anterior do documento atual.
+author indica que o link para o site do autor do artigo atual.
+external indica que é um link para outro site que não faz parte do site.
+nofollow indica que é um link para um site não endossado, como um link pago.
+
+../ para selecionar um diretório antes do que queremos colocar o link!
+
+Para downloads temos que especificar o tipo
+
+<a href="arquivos/teste.pdf" download="teste.pdf" type="application/pdf">download aqui</a>
+
+os types podem ser encontrados aqui: https://www.iana.org/assignments/media-types/media-types.xhtml
+
+
+			Imagens
+
+Podemos alternar o tamanho de imagens, ou quando diminui ou abaixa o tamanho do site, temos que invocar a tag.
+
+<picture> </picture> e dentro dela usar a tag <source> que não tem fechamento. a tag source temos que usar o paramêtro media="(max-width: (num)px" srcset="local-do-arquivo" type="image/png">
+e colocar dentro da tag img a imagem padrão
+
+
+			Aúdios
+
+Podemos colocar aúdios ou músicas, ou podcast. bom qualquer arquivo que só tem som.
+
+podemos usar a tag audio com o src="" que ja sabe pra que serve, e dentro da tag audio podemos usar a tag source, caso nao se tenha compatibilidade com o tipo de arquivo colocado. então pode ser <audio src="" controls (Controlador) e autoplay> </audio>.
+
+ja se usarmos source é como se fosse um if, se um não funcionar o de baixo funcione a assim vai.
+
+
+			Videos
+
+
+Vamos usar também a tag <video> </video> nela colocar o controls para o player, e se quiser a thumb usar a tag poster="diretorioaqui". Dentro dela como de costume usar a tag source. Lembrando que a tag source funciona quase como um if, o que tiver em cima vai tentar, se não funcionar vai o de baixo, e por assim vai, por isso é bom colocar os arquivos com menor tamanho em cima, pois se for eles ok. dentro da tag source usar o src="" e type="".
+
+
+									CSS
+
+
+CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por linguagens como HTML, XML ou XHTML, por exemplo
+
+
+			Inline
+
+
+Inline são alterações no design do site de forma local, ou seja só muda tag por tag, ou se for em body muda o corpo, mas então se quiser mudar varias de uma vez precisa-se mudar por uma. mas é util quando vai mudar só uma.
+
+para isso devemos invocar o paramêtro style="" e dentro disso colocar o que queremos, por exemplo se for uma tag p ou h2 e usarmos color: vai mudar a cor
+
+color: muda a cor 
+text-align: alinhamento de texto
+background-color: cor de fundo
+font-family: muda a fonte
+font-size: tamanho da font
+
+			
+			Interno
+
+
+Quando queremos alterar mais de um paramêtro ao mesmo tempo dentro da tag head, podemos invocar a tag <style> </style> e dentro dessa tag vamos especificar qual tag queremos mudar (vai mudar todas as tags) por exemplo se quisermos mudar TODAS as tags body
+
+<style>
+	body{
+		aqui usamos os metódos
+		color: red;
+		background-color: lightblue;
+	}
+</style>
+
+
+			Externo
+
+
+Podemos usar css externamente e linkar ela com o head do html. A maior vantagem de linkar a css externa é que é só mudar ela, e tudo que está linkado a ela muda também. Então podemos usar ela
+Basta criar um arquivo .css   vamos invocar nesse arquivo no html como
+
+<link rel="stylesheet" href="meuarquivo.css"> 
+
+e no arquivo funciona como o interno, selecionamos a tag que vamos mudar(vai mudar todas) e colocamos as propriedades que queremos mudar.
+
+body{
+	color: red;
+}  
+
+Lembrando que a ordem de preferência de mudanças de estilo é: inline > interno > externo.
+
+
+			Cores
+
+Na hora de invocar cores em html, temos varis maneiras de invocar, podemos usar rgb(0, 0, 0) ou seja colocar as posições de vermelho verde e azul que vão de 0 a 255, podemos só colocar o nome, white blue etc. hsl hue satutoraion e lumination, ai vem em porcentagem porcentagem e numero hsl(%, %, 0); podemos colocar por fim em hexadecimal: #0000ff que seria azul.
+
+
+			Degradê
+
+Em css podemos usar degrade, dentro da tag de <style> devemos usar o paramêtro background-image: linear-gradient() e colocar a direção tipo: to top, to bottom, to left, to right, ou em graus como 90 deg.
+tem-se que usaar background-image.
+
+
+main em html é como se fosse outro body dentro do body, e nela a gente consgue mexer mlhor com o css, do que deixar o texto diretamento no body, acho que foi isso que eu sintetizei, temos varias coisas pra mexer no css, mas como acho que vamos aprender vou deixar pra depois
+
+			Fonts
+
+Podemos trocar as fonts em CSSS usando as tags do css ou inline, como já vimos anteriormente, então usamos o paramêtro font-family, onde podemos colocar uma font safe combination, nessa fonte safe combination vamos colocar, as fonts, elas vão ser usadas em ordem, se a primeira não funcionar então a segunda vai, e assim vai.
+
+font-family: sans, sans-serif;
+
+			Tamanhos de Fonts
+
+Existem tipos de tamanhos, métricas melhor falando, tem as metras fixas e as ajustavéis.
+
+As fixas ou absolutas são: in (inhc, polegadas), cm (centimetros), mm (milimetros), px (pixel), pt (pontos, como do photoshop e word), e pc (uma paica, usada em jornais);
+
+As de medidas ajustavéis ou relativas: em (em, tamanho da letra M), ex (ex, tamanho da letra x), rem (root em, não entendi), vw (view-width ou seja a largura da viewport, ou seja porcentagem da tela), vh (altura da viewport), e %;
+
+Dessas vamos usar e são recomendas a px de pixel e em de tamanho da letra M;
+
+Por padrão a px vem com 16px e a em é o padrão px, ou seja 1 em = 16px;
+
+font-size: tamanhoaqui_medida; ex: font-size: 16px;
+
+
+			Peso, estilo e shorthand.
+
+Algumas fontes tem peso, ou seja se ela é bold normal, lite.
+
+pode ser invocada como 
+
+font-wight: aquiopeso; ex: font-weight: bolder;
+
+Estilo pode ser italico bom, ou normal como padrão.
+
+font-style: estiloaqui; ex: font-style: italic;
+
+Já podemos usar uma shorthand que é a forma de uma linha das fontes;
+
+onde a ordem é estilo da fonte --> peso da fonte --> tamanho da fonte > tipo da fonte;
+
+ou seja
+
+font: (font-style) (font-weight) (font-size) (font-family)
+
+ex: italic bolder 1em 'Work Sans', sans-serif;
+
+
+			Google Fonts
+
+Podemos pegar fonts online e coloca-las no css, temos que ir no site: fonts.google.com la vamos selecionar a font, o lado bom dessa fonte é que não vamos precisar que o usúario baixe nada, já que vai estar online.
+ 
+Clicar em estilos, e depois de selecionar vamos nos quadrados do canto superior direito e depois selecionar @import.
+
+			
+			Fontes externas baixadas
+
+Bomo baixar fontes e colocar no arquivo perto você já sabe então vou pular essa parte.
+
+Vamos abrir um seletor no css chamado 
+
+@font-face{
+	font-family: 'nomequalquer';
+	src: urcl(aqui_coloca_o_diretorio.ttf ou .otf) format('tipodoformato');
+	font-weight: peso-da-fonte;
+	font-style: estilo-da-fonte;
+}
+
+Ou outra mudanças dentro da tag, o que importa é font-family, src e format.
+
+			Formatos de fontes
+
+-Opentype (otf)
+-truetype (ttf)
+-embededd-opentype
+-truetype-aat (apple advancedtypography)
+-svg
+
+			Alinhamentos
+
+Devemos alinhar textos em CSS, usando como já acima
+
+text-align: razão_de_alinhamento;
+
+e para criar espaçamento de parágrafo usar 
+
+text-indent: tamanho_do_espaço;
+
+é bom textos ter alinhamentos justify, e titulos center.
+
+			ID de Identificação
+
+No css, ja sabemos personalizar tags, mas personaliza todas as tags, se queremos uma personalização diferente para apenas uma podemos usar o parametro id="nome" dentro da tag que queremos personalizar. Ex.
+
+Queremos personalizar só uma tag p então vamos colocar
+
+<p id="nomequalquer></p>
+
+e no css vamos personalizar como
+
+p#nomequalquer ou apenas #nomequalquer, e todas tags com esse id vão ser personalizadas.
+
+
+			Classes ou Grupos de identificação.
+
+funciona do mesmo jeito que o id="" só que dessa ves usamos class="nome", é recomendado classificar pela função não pela forma, pode-se usar em varias tags diferentes do id.
+
+Deve ser usado com ponto então
+
+<p class="subtitulo"></p>
+
+no css
+
+p.subtitulo{
+
+}
+
+também pode ser só .subtitulo
+
+Podemos colocar varias class dentro de uma mesma tag, sendo a ordem de preferencia:
+
+id > class > configurações gerais.
+
+
+            Pseudo-classes
+
+Pseudo elementos são funções que podemos executar para o html/css, são invocadas com dois pontos, geralmente são usadas com <div> ex tem o :hover, então quando passar o mouse em cima de algo vai mudar para o que determinar, ex
+
+<h1> e no css h1:hover{ color: blue;} quando passar o mouse no título vai ficar azul. podemos também fazer seleção de cadeias ex. se tiver um paragrafo dentro de um div, podemos colocar coisas especifica nesse parágrafo da seguinte forma
+
+div > p {
+}
+ou se tiver um link dentro de um paragrafo
+
+p > a {
+}
+
+hover: fazer algo quando o mouse passar em cima.
+visited: se algo ja tiver sido visitado.
+active: se tiver clicado em algo.
+
+        Pseudo-elemtnos
+
+Não entendi direito, mas faz algo depois de algo em umd os casos, é invocad com dois pontos ou seja
+
+h1::before{
+    antes do h1 faz algo
+}
+
+h2::after{
+    depois do h1 faz algo
+}
