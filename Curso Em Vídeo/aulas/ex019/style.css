@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+    Em html id="nome" em css #nome só 1 elemento
+    Em html é class = em CSS é .nome varios elementos
+*/
+
+body{
+    background-color: #E8F1F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #001a23;
+    text-align: left;
+}
+h1#principal{
+    text-align: center;
+    color: #E8F1F2;
+    background-color: #001a23;
+}
+h2{
+    color:#31493c;
+    text-align: center;
+}
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+.basico{
+    color: #3D99F5;
+}
+.intermediario{
+    color: #0c3b86;
+}
+.avancado{
+    color: #051133;
+}
+
+.destaque{
+    background-color: aquamarine;
+}
