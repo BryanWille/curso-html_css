@@ -354,7 +354,7 @@ hover: fazer algo quando o mouse passar em cima.
 visited: se algo ja tiver sido visitado.
 active: se tiver clicado em algo.
 
-        Pseudo-elemtnos
+            Pseudo-elemtnos
 
 Não entendi direito, mas faz algo depois de algo em umd os casos, é invocad com dois pontos ou seja
 
@@ -365,3 +365,28 @@ h1::before{
 h2::after{
     depois do h1 faz algo
 }
+
+            Modelo de Caixas
+
+Todo elemento no html tem caixas, assim sendo definido em altura (height) e largura (width) essa borda se chama border, a borda naturalmente vem colada no conteúdo, mas se adicionarmos espaço podemos chamar esse espaço de padding. e podemos criar um espaço externo chamado de margin. e podemos criar um traçejado fora da borda dentro da margin chamado outline.
+
+Box level: quebra o texto e ocupa um horizonte inteiro, basicamente! tag <div>
+Inline level: ele faz o texto contornar a caixa, ou seja não quebra linha nenhuma, e o texto contorna. <span>
+
+Exemplos de elementos box level:
+div, h1 - h6, p, main, header, nav, article, aside, footer, form, video
+
+Exemplos inline level:
+
+span, a, code, small, strong, em, sup-sub, label, button, input, select.
+
+User agent é sempre o navegador que está fazendo as configurações.
+
+Pode-se mudar altura e largura dessas caixs com
+height: unidade de medidas;
+width: unidade de medidas;
+
+podemos alterar isso na borda tbm com
+border-width, border-style, border-color.
+
+e padding também que é o espaço sntre o contúdo e a borda, podemos mudar o nome com padding-top, padding-bottom, padding-left, padding-right.
