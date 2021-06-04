@@ -390,3 +390,43 @@ podemos alterar isso na borda tbm com
 border-width, border-style, border-color.
 
 e padding também que é o espaço sntre o contúdo e a borda, podemos mudar o nome com padding-top, padding-bottom, padding-left, padding-right.
+
+margin: auto; para centralizar!
+
+short-hand de margin borderr e padding
+
+margin: 10px 10px 10px 10px; top right bottom right;
+
+border: 10px solid darkslategray; border-width border-style border-color;
+
+Já outline coloca a linha fora do padding
+
+outline-width: largura; outline-color: cor; outline-style: estilo do contorno;
+
+na margin a gente pode colocar margin: auto e centraliza tudo.
+
+Ou pode se colocar para automatizar apenas duas margens ex. só as laterais
+então:
+
+margin: 10px auto 10px auto;
+ou margin-top: 10px; margin-right: auto; margin-bottom: 10px; margin-left: 10px;
+
+outline short hand
+
+outline; 10px dashed salmon: width style color.
+
+Podemos mudar de inline para box level
+podemos mudar para display: block;
+ou para display: inline;
+
+            Groupping Tags
+
+Basicamente são tags de agrupamentos, elas vão agrupando outras tags, ou seja podemos colocar varis tags dentro de um grupo.
+
+div é box-level
+span é inlevel
+mas tem oturas como
+
+header cabeçalho
+main arquivo principal
+footer rodapé
