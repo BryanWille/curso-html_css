@@ -129,14 +129,12 @@ Para downloads temos que especificar o tipo
 
 os types podem ser encontrados aqui: https://www.iana.org/assignments/media-types/media-types.xhtml
 
-
 			Imagens
 
 Podemos alternar o tamanho de imagens, ou quando diminui ou abaixa o tamanho do site, temos que invocar a tag.
 
 <picture> </picture> e dentro dela usar a tag <source> que não tem fechamento. a tag source temos que usar o paramêtro media="(max-width: (num)px" srcset="local-do-arquivo" type="image/png">
 e colocar dentro da tag img a imagem padrão
-
 
 			Aúdios
 
@@ -237,7 +235,6 @@ Por padrão a px vem com 16px e a em é o padrão px, ou seja 1 em = 16px;
 
 font-size: tamanhoaqui_medida; ex: font-size: 16px;
 
-
 			Peso, estilo e shorthand.
 
 Algumas fontes tem peso, ou seja se ela é bold normal, lite.
@@ -260,13 +257,11 @@ font: (font-style) (font-weight) (font-size) (font-family)
 
 ex: italic bolder 1em 'Work Sans', sans-serif;
 
-
 			Google Fonts
 
 Podemos pegar fonts online e coloca-las no css, temos que ir no site: fonts.google.com la vamos selecionar a font, o lado bom dessa fonte é que não vamos precisar que o usúario baixe nada, já que vai estar online.
  
 Clicar em estilos, e depois de selecionar vamos nos quadrados do canto superior direito e depois selecionar @import.
-
 			
 			Fontes externas baixadas
 
@@ -428,5 +423,9 @@ span é inlevel
 mas tem oturas como
 
 header cabeçalho
+nav seção com links
 main arquivo principal
-footer rodapé
+section cria seções para o site
+article blog de um site
+aside do lado 
+footer rodapé do site
