@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: #011936;
+    background-color: #78C0E0;
 }
 main{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
@@ -9,13 +9,13 @@ main{
     border-radius: 7px;
 }
 h2, h3{
-    color: #011936;
+    color: #150578;
     text-align: center;
 }
 footer{
     margin: -10px;
     padding: 1px;
-    background-color: #ED254E;
+    background-color: #192BC2;
     color: #F4FFFD;
     font-size: large;
     font-weight: bolder;
@@ -33,7 +33,7 @@ section > p, article > p {
     text-align: justify;
 }
 section#video{
-    background-color: #465362;
+    background-color: #449DD1;
 }
 picture, img{
     margin: 0 auto;
@@ -42,7 +42,7 @@ picture, img{
     height: auto;
 }
 section#lista{
-    background-color: #f5e394;
+    background-color: #78C0E0;
     box-shadow:2px 2px 3px #4653625e;
     margin: 20px auto;
     border-radius: 4px;
