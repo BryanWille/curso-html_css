@@ -429,3 +429,21 @@ section cria seções para o site
 article blog de um site
 aside do lado 
 footer rodapé do site
+
+			Variavéis CSS
+
+para variaveis em css bsata seguir o seguinte
+
+:root{
+	--nomevariavel: conteúdo-que-recebe;
+}
+
+
+			Retirar margin
+	
+Como sempre tem paragrafos e titulso com margin, basta usar o seguinte parre removê-los, e também podemos tirar o padding.
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
