@@ -8,11 +8,11 @@
 #0E0E52;
 */
 :root{
-    --azulclaro: #78C0E0;
-    --azulclaromedio: #449DD1;
-    --azulcinza: #3943B7;
-    --azulagua: #150578;
-    --azulescuro: #0E0E52;
+    --cor01: #78C0E0;
+    --cor02: #449DD1;
+    --cor03: #3943B7;
+    --cor04: #150578;
+    --cor05: #0E0E52;
 
     --fonte-padrao: Arial, Verdana Helvetica, sans-serif;
 }
@@ -23,11 +23,11 @@
 }
 
 body{
-    background-color: var(--azulclaro);
+    background-color: var(--cor01);
 
 }
 header{
-    background-color: var(--azulcinza);
+    background-color: var(--cor03);
 }
 header > h1{
     color: white;
@@ -39,12 +39,12 @@ main{
     background-color:  white;
 }
 nav {
-    background-color: var(--azulescuro);
+    background-color: var(--cor05);
 }
 main >  h1{
-    color: var(--azulagua)
+    color: var(--cor04)
 }
 footer{
-    background-color: var(--azulescuro);
+    background-color: var(--cor05);
     color: white;
 }
