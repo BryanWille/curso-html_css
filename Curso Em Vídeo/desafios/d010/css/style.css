@@ -37,6 +37,10 @@ header > p {
 }
 main{
     background-color:  white;
+    min-width: 500px;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
 }
 nav {
     background-color: var(--cor05);
@@ -47,4 +51,9 @@ main >  h1{
 footer{
     background-color: var(--cor05);
     color: white;
+    text-align: center;
+}
+section#video{
+    text-align: center;
+    background-color: var(--cor04);
 }

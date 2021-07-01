@@ -447,3 +447,17 @@ Como sempre tem paragrafos e titulso com margin, basta usar o seguinte parre rem
 	margin: 0px;
 	padding: 0px;
 }
+
+
+			Centralizar caixa:
+
+margin: auto;
+
+			Portabilidade
+		
+Para deixar sites com uma view boa para varios dispositivos, podemos colocar o min e max width para melhorar a visualização
+
+min-width: 300px;
+max-width: 900px;
+
+Por exemplo!
