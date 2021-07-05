@@ -461,3 +461,9 @@ min-width: 300px;
 max-width: 900px;
 
 Por exemplo!
+
+
+			Centralizar imagem
+
+Para centralizar imagem usamos como de sempre margin: auto;
+Imagens por padrão não são blocos então temos que colocar: display: block; para centralizar e margin: auto também.
