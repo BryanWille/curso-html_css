@@ -467,3 +467,13 @@ Por exemplo!
 
 Para centralizar imagem usamos como de sempre margin: auto;
 Imagens por padrão não são blocos então temos que colocar: display: block; para centralizar e margin: auto também.
+
+
+			Centralização de Texto
+
+As vezes quando o p ou h1 não centralizar com text-align: center; podemos tentar o margin: auto, pois é a caixa que devemos centralizar. podemos também colocar um max-width para que o texto quebre
+
+
+			seletor
+
+podemos usar main p para todos os p contidos em main, mas se usamos o main > p so vai ser nos p diretamento filhos de main.

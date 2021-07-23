@@ -26,15 +26,63 @@ body{
     background-color: var(--cor01);
 
 }
+
+main h2{
+    color: var(--cor04);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    text-ident: 8px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+main strong{
+    color: var(--cor04);
+    font-weight: bold;
+
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor02);
+    padding: 2px;
+    border-radius: 3px 6px;
+    color: white;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
 header{
-    background-color: var(--cor03);
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
+    min-height: 120px;
+    text-align: center;
+    padding-top: 40px;
 }
+
 header > h1{
+    margin: auto;
     color: white;
+    margin-bottom: 10px;
+    font-size: 2.8em;
+    max-width: 600px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);
 }
+
 header > p {
+    padding: 0px 20px;
+    margin: auto;
+    font-size: 1.2em;
     color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);
 }
+
 main{
     background-color:  white;
     min-width: 300px;
@@ -45,21 +93,41 @@ main{
     border-radius: 0px 0px 10px 10px;
 }
 img, picture{
-    width: 100%;
+    max-width: 100%;
     display: block;
     margin: 10px auto 10px auto;
 }
+
 nav {
+    padding: 10px;
     background-color: var(--cor05);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.383);
 }
+
 main >  h1{
     color: var(--cor04)
 }
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+nav > a:hover{
+    background-color: var(--cor02);
+    color: var(--cor03)
+}
+
 footer{
     background-color: var(--cor05);
     color: white;
     text-align: center;
 }
+
 section#video{
     text-align: center;
     background-color: var(--cor04);
