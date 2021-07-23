@@ -31,7 +31,7 @@ main h2{
     color: var(--cor04);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor01), transparent);
-    text-ident: 8px;
+    text-indent: 8px;
 }
 
 main p{
