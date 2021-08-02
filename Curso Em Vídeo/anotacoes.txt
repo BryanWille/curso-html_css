@@ -477,3 +477,14 @@ As vezes quando o p ou h1 não centralizar com text-align: center; podemos tenta
 			seletor
 
 podemos usar main p para todos os p contidos em main, mas se usamos o main > p so vai ser nos p diretamento filhos de main.
+
+
+			Unorderned list
+
+Se colocarmos que nossa lista está dentro de algo por padrão as bolinhas ficam foram desse algo, então temos que coloca ro seguinte
+
+list-style-type: '\2714\00A0'; //Vai mudar o tipo de bolinha para o emoji 2714
+list-style-position: inside; //Vai colocar as bolinhas dentro da tag antes dela
+columns: 3; //Vai dividir em colunas dentro da tag anterior
+
+conseguimos colocar margin negativa em um titulo para ligar junto com o bloco, que nem no aside do desafio 10, com a tag h3, onde colocamos -10px de margin para cobrir os 10px da tag aside, e depois o border radius do h3 do mesmo tamanho da tag aside
