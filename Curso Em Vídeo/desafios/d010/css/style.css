@@ -59,6 +59,22 @@ main a:hover{
     color: var(--cor01);
 }
 
+div.video{
+    background-color: var(--cor04);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 a.externo::after {
     content: '\00A0\1F517';
 }
@@ -75,6 +91,7 @@ header > h1{
     color: white;
     margin-bottom: 10px;
     font-size: 2.8em;
+    font-weight: bold;
     max-width: 600px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);
 }

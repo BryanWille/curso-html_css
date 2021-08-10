@@ -488,3 +488,27 @@ list-style-position: inside; //Vai colocar as bolinhas dentro da tag antes dela
 columns: 3; //Vai dividir em colunas dentro da tag anterior
 
 conseguimos colocar margin negativa em um titulo para ligar junto com o bloco, que nem no aside do desafio 10, com a tag h3, onde colocamos -10px de margin para cobrir os 10px da tag aside, e depois o border radius do h3 do mesmo tamanho da tag aside teste
+
+
+
+			Vídeo responsivo:
+
+Temos que colocar o iframe dentro de uma div afim de obter mais controle:
+
+div.video{
+    background-color: var(--cor04);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+Esse serie o código onde, o iframe está dentro da div com class="video"
