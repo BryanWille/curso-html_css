@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATIONALITÉ</title>
+</head>
+<body>
+    <h1>Nacionality</h1>
+    Qual sua nacionalidade <input type="text" id="nacionalidade">
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+    <div id="nacio"></div>
+    <script>
+        function nacionalidade(){
+            var msg;
+            var elNacId = document.getElementById("nacio");
+            var elNacio = document.getElementById("nacionalidade");
+            var nacio = String(elNacio.value)
+            if(nacio == "brasileiro" || nacio == "brasileira"){
+                msg = '<p><img src="https://img.icons8.com/emoji/48/000000/brazil-emoji.png"/> Eba Brasil!</p>';
+            } else if(nacio == "francês" || nacio == "francêsa"){
+                msg = '<p> <img src="https://img.icons8.com/color/48/000000/france-circular.png"/> Jetur France!</p>'
+            } else if(nacio == "americano" || nacio == "americana"){
+                msg = '<p> <img src="https://img.icons8.com/color/48/000000/usa-circular.png"/> Yeah United States </p>'
+            } else {
+                msg = "Fiquei com preguiça";
+            }
+
+            elNacId.innerHTML = msg;
+        }
+    </script>
+</body>
+</html>

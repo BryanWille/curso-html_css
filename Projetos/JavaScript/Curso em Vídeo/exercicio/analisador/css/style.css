@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(244,220,28);
+}
+header > h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-size: 45px;
+}
+section{
+    background-color: white;
+    margin: auto;
+    min-width: 200px;
+    min-height: 200px;
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 8px 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.383);
+}
+
+footer > p{
+    padding: 10px;
+    color: black;
+    text-align: center;
+}

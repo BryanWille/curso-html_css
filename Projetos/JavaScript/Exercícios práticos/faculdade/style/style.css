@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(255, 255, 91);
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+span{
+    display: block;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.377);
+    border-radius: 12px;
+    padding: 2px 0px 30% 0px;
+    margin-right: 13%;
+    margin-left: 13%;
+    margin-bottom: auto;
+}
+p#resultado{
+    font-size: x-large;
+}
+article{
+    text-align: center;
+}
+article > p {
+    font-size: 30px;
+}
+#salario, #nome {
+    height: 30px;
+    font-size: 14pt;
+}
+.confirmar{
+    width: auto;
+    height: 30px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0px;
+    color: white;
+    text-align: center;
+    background-color: rgb(29, 27, 27);
+}
+footer > p{
+    margin: 0;
+    padding: 2px 0px;
+}
+a:visited, a:link{
+    color:rgb(255, 255, 91);
+  }
+a:hover{
+    color:white;
+  }
+a:active{
+    color:red;
+  }

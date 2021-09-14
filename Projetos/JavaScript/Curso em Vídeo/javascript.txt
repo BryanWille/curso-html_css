@@ -1,0 +1,141 @@
+        Caixa de Saída
+
+window.alert('') - Caixa de mensagem
+window.confirm('') - Caixa de confirmação
+window.prompt('') - Caixa de entrada de Dados, sempre entra dados como String
+
+typeof no termianl, retorna o tipo da variável.
+
+Number.parseInt(n); String para número ou apenas parseInt
+Number.parseFloat(n); String ou número para float parseFloat
+Number(n); JavaScript decide se é number ou float
+String(n); Converte para String
+n.toString();
+
+Placeholder ou seja da pra printar varios elementos basta usar dentro de CRASE o ${var} e pronto.
+
+s.lenght; tamanho da string
+s.toUpperCase(); tudo em Maisculo
+s.toLowerCase(); tudo em Minusculo
+
+document.write escreve no site o que você quer (sim agora você coloca as variáveis entre tags e funcionam gg)
+
+n.toFixed(quantidade_de_casas_decimais) - delimitar as casas decimais de um número.
+
+n1.toFixed(2).replace('.', ',') - trocar o ponto por vírgula.
+
+n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}); transforma em BRL
+pt-br = lingua, estilo é currency ou seja dnheiro, currency é BRL ou seja R$. onde pode-se por EUR ou USD, depende da moeda.
+
+
+                Dom é como se fosse uma navegação por árvores 
+
+ex a principal é window depois temos document e em document é onde temos html, dentro de html temos as areas head e body e dentro delas as respectivas tags de tags de cada uma. podemos selecionar as tags por marca
+
+Marca = todas as tags, depois informamos qual o indice da tag a quantidade informada ex:
+window.document.getElementsByTagName('aqui_dentro_a_tag')[indice da tag, começa em 0]
+
+getElementsByTagName --Nome da tag (tem que selecionar o indice)
+getElementsByName()
+getElementsById --Id da tag
+getElementsByClassName --Classe da tag
+querySelector(css_selector) -- Usa como no css #div < id .div < class
+querySelectorAll()
+
+ex
+var d = window.document.getElementsById('msg')
+d.innerText = 'Estou arguadando'; <-- vai mudar o conteúdo da id com por esssa msg, ou seja InnerText muda o conetudo
+
+                Eventos DOM
+
+mouseenter - mouse entra na tag 
+mousemove - mouse se move dentro da tag
+mousedown - se clicar na tag com o mouse
+mouseup - desapertar o mouse na tag 
+click - clica rapidamente tag
+mouseout - mouse sai da tag
+
+                Função
+
+function nome(){
+        funções que vai fazer!
+}
+
+                EventListener
+
+variavel.addEventListener('evento', funcao_ou_oque_vai_fazer)
+
+ou podemos colocar tags.
+
+<h1 evento="atributos ou nomes"></h1>
+
+
+                Input
+
+Input são caixas de díalogos que o usuário coloca algo.
+são muito caixas de colocar dados basicamente.
+
+como é uma tag podemos colocar, nome id e class. mas as caixas de input também tem types, como se pode olhar melhor aqui https://www.w3schools.com/html/html_form_input_types.asp.
+
+Number(variavel.value) para converter de string para number.
+ou seja
+value retorna o valor de um getElementsBy* 
+
+                Dia
+
+let hoje = new Date().getDay();
+let dia;
+
+onde dia varia de 0 a 6 e 0 = DOmingo, e 6 = Sabado
+
+                Arrays e For
+
+o equivalente do Java
+
+for(String array : vetor){}
+
+é
+
+for (let array of vetor){}
+
+também podemos navegar pelos indices
+
+trocando of por in.
+
+for (let indice in vetor){}
+
+vetor.push(var); adiciona um novo elemento ao final
+vetor.pop(); remove o último elemento
+vetor.unshift(var); adiciona ao começo
+vetor.shift(); remove do começo
+
+                Criar elementos em JavaScript
+
+para criar elementos no HTML em JAVASCRIPT temos qu eusar of
+
+var nome = document.createElement('tag_aqui');
+
+e para setar os atributos desse elemento:
+
+nome.setAttribute('atribuito', 'valor_atribuito');
+
+nome.appendChild(conteudo);
+
+para inserir o conteúdo dentro de uma tag.
+
+
+                Arrays
+
+nome.length; Não precisa de parênteses não é metodo, retorna o tamanho da array.
+nome.push(valor); insere um valor na ultima posição da array.
+nome.sort(); deixa a array em ordem alfabetica ou decimal.
+
+for(let num in nome){
+        console.log(nome[num]);
+}
+
+Lê todas as posições da array;
+
+                funções
+
+Podemos iniciar uma função no parametro, para caso o valor não seja repasado.

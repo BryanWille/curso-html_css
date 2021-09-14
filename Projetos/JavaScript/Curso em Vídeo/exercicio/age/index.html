@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Age Verifier</title>
+</head>
+<body>
+    <header>
+        <h1>Verifying your Age!</h1>
+    </header>
+    <main>
+        Born Year: <input type="text" placeholder="Here your birth year" id="bornYear">
+        
+        <div id="option">
+            <p>Sex:
+            <input type="radio" name="option" id="man" checked>
+            <label for="man">Man</label>
+            <input type="radio" name="option" id="woman">
+            <label for="woman">Woman</label>
+            </p>
+        </div>
+        <input type="button" value="Verify" onclick="verify()" id="verify">
+        <div id="divmsg"></div>
+        <div id="image"></div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/BryanWille">Bryan Wille: GitHub</a></p>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

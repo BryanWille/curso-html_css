@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+input{
+    width: 50px;
+    height: 50px;
+    margin: 2px -1px 2px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+main{
+    background-color: lightskyblue;
+    min-width: 130px;
+    min-height: 130px;
+    width: auto;
+    height: auto;
+    max-width: 220px;
+    max-height: 220px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 6px;
+}
+div#botoes{
+    text-align: center;
+}
+input:hover{
+     background-color: #c7c7c7;
+}

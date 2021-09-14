@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(21, 183, 247);
+}
+
+h1{
+    color:white;
+    margin: 5px;
+    text-align: center;
+}
+
+footer > p {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+article{
+    margin: auto;
+    background-color: white;
+    max-width: 400px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+    border-radius: 10px 0px;
+}
+article > div > p{
+    margin: 8px 1px 8px 1px;
+}
+.botão{
+    width: 20px;
+    height: 20px;
+}

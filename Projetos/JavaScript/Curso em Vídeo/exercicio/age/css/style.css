@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 2px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.322);
+}
+body{
+    background-color: rgb(38, 168, 255);
+}
+main{
+    background-color: white;
+    margin: auto;
+    width: 450px;
+    height: auto;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.384);
+}
+footer, a{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+div#image{
+    margin: auto;
+    text-align: center;
+}
+#verify{
+    width: 60px;
+    height: 20px;
+}

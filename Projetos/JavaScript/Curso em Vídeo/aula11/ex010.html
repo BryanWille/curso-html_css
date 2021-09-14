@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistemas de Multa</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" placeholder="Digite a km/h aqui"> Km/h
+    <input type="button" value="Enviar" onclick="velocidade()">
+    <div id="msg"></div>
+    <script>
+        function velocidade(){
+            var txtv = document.getElementById("txtvel");
+            velocidade = Number(txtv.value);
+            var msg;
+            if(velocidade > 60){
+                msg = `Como a velocidade foi maior que 60km/h (${velocidade} km/h) então vocês está multado!`;
+            } else {
+                msg = `Parabéns por seguir as regras, você não foi multado!`;
+            }
+            mensagem = window.document.getElementById("msg")
+            mensagem.innerHTML = "<p>" +msg +"</p>";
+    }
+    </script>
+</body>
+</html>
